@@ -17,7 +17,7 @@ public class Finish extends JFrame {
 	private JScrollPane scrollPane_1;
 	private JScrollPane scrollPane_3;
 	private JLabel lblCategory;
-	private JLabel lblAmout;
+	private JLabel lblAmount;
 
 	public JTextArea txtDetails = new JTextArea();
 	
@@ -36,7 +36,7 @@ public class Finish extends JFrame {
 		
 		lblCategory = new JLabel("Category");
 		
-		lblAmout = new JLabel("Amout");
+		lblAmount = new JLabel("Amount");
 		
 		JLabel lblDetails = new JLabel("Details");
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
@@ -53,7 +53,7 @@ public class Finish extends JFrame {
 							.addPreferredGap(ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 								.addComponent(scrollPane_3, GroupLayout.PREFERRED_SIZE, 178, GroupLayout.PREFERRED_SIZE)
-								.addComponent(lblAmout))
+								.addComponent(lblAmount))
 							.addContainerGap())
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addComponent(lblDetails)
@@ -64,7 +64,7 @@ public class Finish extends JFrame {
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
 						.addComponent(lblCategory)
-						.addComponent(lblAmout))
+						.addComponent(lblAmount))
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addComponent(scrollPane_3, GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
@@ -79,9 +79,9 @@ public class Finish extends JFrame {
 		txtDetails.setEditable(false);
 		scrollPane.setViewportView(txtDetails);
 		
-		JTextArea txtAmout = new JTextArea();
-		txtAmout.setEditable(false);
-		scrollPane_3.setViewportView(txtAmout);
+		JTextArea txtAmount = new JTextArea();
+		txtAmount.setEditable(false);
+		scrollPane_3.setViewportView(txtAmount);
 		
 		JTextArea txtCat = new JTextArea();
 		txtCat.setEditable(false);
@@ -140,14 +140,14 @@ public class Finish extends JFrame {
 			num++;
 		}
 		
-		txtAmout.append(URL + "\n");
-		txtAmout.append(FILE + "\n");
-		txtAmout.append(OP + "\n");
-		txtAmout.append(EXE + "\n");
-		txtAmout.append(Async + "\n");
-		txtAmout.append(CONSOLE + "\n");
-		txtAmout.append(BAN + "\n");
-		txtAmout.append(KICK + "\n");
+		txtAmount.append(URL + "\n");
+		txtAmount.append(FILE + "\n");
+		txtAmount.append(OP + "\n");
+		txtAmount.append(EXE + "\n");
+		txtAmount.append(Async + "\n");
+		txtAmount.append(CONSOLE + "\n");
+		txtAmount.append(BAN + "\n");
+		txtAmount.append(KICK + "\n");
 		
 		scrollPane_1.setViewportView(txtCat);
 		contentPane.setLayout(gl_contentPane);

@@ -48,7 +48,7 @@ public class ForceOPChecker extends JFrame {
 		if(JAD().exists()){
 			
 		}else{
-			JOptionPane.showMessageDialog(this, "Please put JAD.exe in " + workingDir(), "No JAD Found!", JOptionPane.ERROR_MESSAGE);
+			JOptionPane.showMessageDialog(this, "Please put 'JAD.exe' in " + workingDir(), "No JAD Found!", JOptionPane.ERROR_MESSAGE);
 			return false;
 		}
 		
@@ -92,7 +92,7 @@ public class ForceOPChecker extends JFrame {
 	          }
 	      
 	      });
-		JLabel lblDragFileHere = new JLabel("Drag File here");
+		JLabel lblDragFileHere = new JLabel("Drag file/plugin here");
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
